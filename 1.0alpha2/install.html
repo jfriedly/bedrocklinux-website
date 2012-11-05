@@ -448,7 +448,7 @@
 				If you are experienced at compiling the Linux kernel, you
 				probably have your own <code>.config</code> to reference.  Feel
 				free to use that.  Just be wary that Bedrock Linux does not
-				typically use a initrd.
+				typically use an initrd.
 			</p>
 			<p>
 				Instead of using a generic kernel which includes support for
@@ -500,7 +500,7 @@
 				a module and not built-in.
 			</p>
 			<p>
-				Note that compile time can be improved drastically be only
+				Note that compile time can be improved drastically by only
 				compiling the parts of the kernel your hardware will actually
 				use.  However, if you later add new hardware, you will have to
 				recompile the kernel.
@@ -658,7 +658,7 @@
 				Installing the modules created  two symlinks which will break
 				when Bedrock's root filesystem is mounted as <code>/</code>
 				rather than <code>/mnt/bedrock</code>.  To fix this, delete and
-				manually re-create the pointing to the correct location.
+				manually re-create them pointing to the correct location.
 			</p>
 			<ul class="rcmd">
 				<li>rm /mnt/bedrock/lib/modules/<code class="changethis">KERNEL-VERSION</code>/build</li>
@@ -739,7 +739,7 @@
 				At the moment, there is no list of exactly what parts of
 				busybox Bedrock Linux requires.  If you are worried that you
 				might leave something out which Bedrock Linux requires, a
-				viable strategy could be to simply be easiest to install just
+				viable strategy could be to simply to install just
 				about everything in Applets (ie, everything not under "Busybox
 				Settings --->").  This is not required, and if you're familiar
 				with what is typically expected in a Linux distribution, you're
