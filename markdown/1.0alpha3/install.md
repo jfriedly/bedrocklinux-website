@@ -627,9 +627,9 @@ broken up into two parts:
 
 ### {id="add-users"} Add users
 
-The userland tarball you installed earlier with two users, "root" and "brroot".
+The userland tarball you installed earlier comes with two users, "root" and "brroot".
 "root" is the normal root user.  "brroot" is actually the same user (both have
-UID 0); it is simple an alternative login which will always log in to Bedrock
+UID 0); it is simply an alternative login which will always log in to Bedrock
 Linux's core rather than a shell from a client.  While "brroot" is not
 required, it is quite useful as a fall-back in case the you would like to use a
 shell from a client for root and that client breaks.
