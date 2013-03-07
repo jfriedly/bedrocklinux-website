@@ -560,7 +560,7 @@ Consider changing the following from this addition:
 
 The typical `fsck` executable itself is a front-end for filesystem-specific
 executables.  If you want to have Bedrock Linux run `fsck` on boot as most
-other major Linux distributions do, you will need to install the both the fsck
+other major Linux distributions do, you will need to install both the fsck
 front-end and filesystem-specific executable(s) for your filesystem(s).  Note
 that while this is recommended, it is optional - you can set "FSCK=0" in your
 rc.conf to disable `fsck`, and in this case you do not need to install `fsck`.
