@@ -75,7 +75,7 @@ other distribution can.
 - You can do a distro-upgrade (Debian 5 to 6, Ubuntu 12.04 to 12.10, etc),
   *live, with almost no downtime*. No need to stop your apache server, reboot,
   configure things while the server is down, etc.
-- If a distro-upgrade breaks anything, no problem - the old release's program
+- If a distro-upgrade breaks anything, no problem - the old release's programs
   and settings can still be there, ready to go to pick up what it was doing
   before the distro-upgrade broke anything.
 - Minimal stress from any given package failing to work - just use one from
@@ -85,7 +85,7 @@ other distribution can.
 ## {id="real\_world"} Real-World Examples of where Bedrock Linux Shines
 
 These are all examples of real-world situations which came up while Bedrock
-Linux was in development which showed quite clearly Bedrock's strength.
+Linux was in development and clearly show Bedrock's strength.
 
 - When Quake Live's Linux release came out, there was a bug which only seemed
   to manifest itself against Debian's X11. The development team most likely
@@ -99,7 +99,7 @@ Linux was in development which showed quite clearly Bedrock's strength.
   `LD_PRELOAD`.
 - With only a few days to go before presenting Compiz at a local Free/Open
   Source Software enthusiast club, the presenter found Debian's video drivers
-  for his laptop were overly old to support the 3D acceleration needed for
+  for his laptop were too old to support the 3D acceleration needed for
   Compiz. While Arch Linux's X11 video drivers were new enough, its Compiz
   package did not work at the time. Bedrock Linux allowed for a quick and easy
   solution: use Arch Linux's X11 with Debian's Compiz. 
@@ -357,7 +357,7 @@ If the value of `$SHELL` is not available in the client it will fail.
 
 Very early (before any public release) versions of Bedrock Linux would try to
 detect if you tried to run a command which isn't available and, on the fly,
-attempt to find the command in a client. This proved to slow. Instead,
+attempt to find the command in a client. This proved too slow. Instead,
 Bedrock's `brp` command will search for all of the commands available and store
 them in directories which can be included in one's `$PATH` so that those
 commands work transparently.  `/etc/profile` should include the relevant
@@ -399,12 +399,12 @@ shells by default. However, this raises three problems:
 - What if the chroot system is fine but the client breaks? What if the user
   forgets that he/she uses the client's shell and removes the client?
 - The typical Unix system used to determine which shell to run requires the
-  full page to shells to be set within `/etc/passwd`. However, this path will
+  full path to shells to be set within `/etc/passwd`. However, this path will
   likely change depending on which client is attempting to run the shell. For
-  example, the core Bedrock Linux see `zsh` located at `/var/local/brpath/zsh`, but
-  a Debian client will see the same `zsh` located at `/bin/zsh`. Having two
-  differing paths for zsh like this will not work with a single login and the
-  traditional Unix `/etc/passwd` system.
+  example, the core Bedrock Linux may see `zsh` located at
+  `/var/local/brpath/zsh`, but a Debian client may see the same `zsh` located
+  at `/bin/zsh`. Having two differing paths for zsh like this will not work
+  with a single login and the traditional Unix `/etc/passwd` system.
 
 Bedrock Linux provides two options to resolve these issues:
 
@@ -433,7 +433,7 @@ again, if the user wants to directly log into the core Bedrock shell.
 The `bri` command will provide information about the clients based on which
 flag is used.
 
-- `bri -l` will print a List of clients.
+- `bri -l` will print a list of clients.
 - `bri -n` will print the name of the client in which the command is run.
 - `bri -p` will print the path of the client in which the command is run *if*
   no arguments are given.  Otherwise, it will print the paths of the clients
@@ -443,10 +443,11 @@ flag is used.
   listed in the brclients.conf for the respective client(s).  If no argument is
   provided, it will print for the client in which the command is run;
   otherwise, it will print for all clients.
+  <!---The last sentence above doesn't make sense-->
 - `bri -w` will print the client which will provide the command if it is not
   available locally.
-- `bri -W` will print the client which will provides the command - either the
-  client it is run in (ie, `bri -n`) if it is available locally or the output
+- `bri -W` will print the client which will provide the command - either the
+  client it is run in (i.e., `bri -n`) if it is available locally or the output
   of `bri -w` if it is available in the brpath.
 - `{class="rcmd"} bri -c` will cache the values of `-n` and `-p` to speed up
   future requests.  Note that this requires root.  It is recommended that this

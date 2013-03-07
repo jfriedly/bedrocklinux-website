@@ -19,7 +19,7 @@ Nav:   home.nav
 
 ## {id="what\_is\_bedrock"} What is Bedrock Linux?
 
-See the Introduction to [Bedrock](introduction.html).
+See the [Introduction to Bedrock](introduction.html).
 
 ## {id="why\_use\_bedrock"} Why should I use Bedrock?
 
@@ -124,7 +124,9 @@ Bedrock Linux does not do very much by itself; rather, it is the foundation
 upon which other Linux distributions are placed. Initial ideas for a name were
 intent on reflecting this fact. Other proposed names included "Foundation
 Linux", "Frame Linux" and "Scaffolding Linux". The name chosen has nothing to
-do with the television show The Flintstones.
+do with the television show *The Flintstones* or Young Money's song *Bed Rock*.
+<!---Feel free to take out the bit about Young Money, but 'The Flintstones'
+should probably be in italics.-->
 
 ## {id="release\_names"} Where do the release names come from?
 
@@ -135,8 +137,8 @@ Nickelodeon television program *Avatar: The Last Air Bender.*
 
 The system requirements are listed in the specific pages for each release. This
 is done in case changes between versions alter the system requirements. The
-system requirements for the initial alpha can be found
-[here](http://bedrocklinux.org/1.0alpha1/systemrequirements.html).
+system requirements for the current release can be found
+[here](http://bedrocklinux.org/1.0alpha3/systemrequirements.html).
 
 ## {id="why\_own\_distro"} Why does this need to be its own distribution?
 

@@ -25,9 +25,10 @@ Work arounds:
 
 This assumes `/tmp` is shared between clients.
 
-Work is underway to create a daemon to automate this second option.  See here for its current state, see [here](http://bedrocklinux.org/issues/issue-a158e55ccf9aa3f6eb8036fb086f83c8cdab0cd9.html).
+Work is underway to create a daemon to automate this second option.  For its
+current state, see [the daemon's issue page](http://bedrocklinux.org/issues/issue-a158e55ccf9aa3f6eb8036fb086f83c8cdab0cd9.html).
 
-See [here](http://bedrocklinux.org/issues/issue-ed10277445e2bc796171ca53603f0894f300a5ef.html) for issue tracker page for the issue.
+See the issue tracker page for this issue [here](http://bedrocklinux.org/issues/issue-ed10277445e2bc796171ca53603f0894f300a5ef.html).
 
 ## {id="static"} Difficulty Statically Compiling Busybox
 
@@ -53,17 +54,16 @@ Work arounds:
 ## {id="manpages"} Man pages do not work across clients
 
 While Bedrock Linux ensures executables work across clients, no work has yet
-been done to get man pages to work similarly.  See
-[here](http://bedrocklinux.org/issues/issue-2e03cf889532e11876db8b76a2263e206fabdab4.html)
-for the issue tracker.
+been done to get man pages to work similarly.  See the issue tracker page for
+this issue
+[here](http://bedrocklinux.org/issues/issue-2e03cf889532e11876db8b76a2263e206fabdab4.html).
 
 ## {id="statoverride"} Debian-based clients: statoverride problems
 
 Occasionally, apt/dpkg will complain about issues with "statoverride". This
 most likely occurs because it expects a daemon should be running, but it is
-not. This can be fixed in this instance by simply removing the contents of
+not. This can be fixed by simply removing the contents of
 /var/lib/dpkg/statoverride. Simply leave an empy file in that location. This
 may come up repeatedly - no work has yet been done to find a permanent
-solution.  See
-[here](http://bedrocklinux.org/issues/issue-5b1deb0fff09c4e796bd9421b7014ccb89894f99.html)
-for the issue tracker.
+solution.  See the issue tracker page for this issue
+[here](http://bedrocklinux.org/issues/issue-5b1deb0fff09c4e796bd9421b7014ccb89894f99.html).

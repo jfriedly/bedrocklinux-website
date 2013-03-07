@@ -21,7 +21,7 @@ demonstration](http://www.youtube.com/watch?v=MuYMBCcgs98) and read the
 <small>2013-01-16</small>
 
 Bosco has been updated, fixing various issues.  If you are currently using a
-Bosco installation from before 2012-01-16, it is recommended you update.
+Bosco installation from before 2013-01-16, it is recommended you update.
 Download and untar the [userland](1.0alpha3/bedrock-userland-1.0alpha3.tar.gz)
 to a temporary directory (such as `/tmp/bosco-update`), and replace the
 following files from the core system with those from the userland tarball:
